@@ -36,6 +36,7 @@ module.exports = {
     'react/no-unknown-property': 'off',
     'no-useless-escape': 'off',
     'no-undef': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
     'prettier/prettier': [
       'error',
       {

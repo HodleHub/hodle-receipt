@@ -1,10 +1,10 @@
-import React from 'react';
-import { cn } from '@/utils/utils';
+import React from 'react'
+import { cn } from '@/utils/utils'
 
 interface SeparatorProps {
-  className?: string;
-  label?: string;
-  orientation?: 'horizontal' | 'vertical';
+  className?: string
+  label?: string
+  orientation?: 'horizontal' | 'vertical'
 }
 
 export default function Separator({
@@ -18,15 +18,17 @@ export default function Separator({
       className={cn(
         'flex items-center',
         orientation === 'horizontal' ? 'w-full' : 'h-full flex-col',
-        className
+        className,
       )}
       {...props}
     >
-      <div className={cn(
-        'shrink-0 bg-border',
-        orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]'
-      )} />
-      
+      <div
+        className={cn(
+          'shrink-0 bg-border',
+          orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
+        )}
+      />
+
       {label && (
         <div className="relative flex justify-center">
           <span className="bg-card px-2 text-xs text-muted-foreground absolute -top-2">
@@ -35,5 +37,5 @@ export default function Separator({
         </div>
       )}
     </div>
-  );
-} 
+  )
+}
