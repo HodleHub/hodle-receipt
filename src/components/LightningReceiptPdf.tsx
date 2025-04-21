@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Document, Page, Text, View, StyleSheet, PDFDownloadLink, Image } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, PDFDownloadLink, Image, Link } from '@react-pdf/renderer';
 import { Button } from '@/components/ui/Button';
 import { FilePlus } from 'lucide-react';
 
@@ -157,6 +157,10 @@ const LightningReceiptDocument = ({
         
         <Text style={styles.footer}>
           Gerado em {new Date().toLocaleDateString()} às {new Date().toLocaleTimeString()}
+        </Text>
+        
+        <Text style={styles.footer}>
+          Construído com <Link src="https://www.npmjs.com/package/light-bolt11-decoder">bolt11</Link> | <Link src="https://github.com/HodleHub/hodle-receipt">GitHub</Link>
         </Text>
       </Page>
     </Document>

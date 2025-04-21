@@ -1,5 +1,6 @@
 import LightningReceiptForm from '@/components/LightningReceiptForm';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,6 +24,12 @@ export default function Home() {
       <div className="grid gap-6 w-full max-w-2xl mx-auto">
         <LightningReceiptForm />
       </div>
+      
+      <footer className="mt-16 text-center text-sm text-gray-500">
+        <p>
+          Construído com <a href="https://www.npmjs.com/package/light-bolt11-decoder" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">bolt11</a> | <a href="https://github.com/HodleHub/hodle-receipt" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">GitHub</a>
+        </p>
+      </footer>
     </div>
   );
 }
