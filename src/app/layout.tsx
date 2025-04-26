@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'HODLE - RECEPIT',
+  title: 'HODLE - RECEIPT',
   description: 'Comprovante de pagamentos na rede lightning',
 }
 
